@@ -1,0 +1,229 @@
+/* 表頭樣式開始 */
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 10%;
+  color: #307cae;
+  text-align: center;
+  margin: 10px;
+}
+
+.now {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.now-p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin: 10px;
+}
+
+.donate-p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #484848;
+  text-align: center;
+  margin: 10px;
+}
+
+.now-text {
+  margin: 0 100px;
+}
+
+.now-number {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ff6666;
+  z-index: 0;
+  text-align: center;
+}
+
+.now-number::before {
+  /* 複製一份 */
+  content: attr(data-123);
+  position: absolute;
+  z-index: -1;
+  -webkit-text-stroke: 3px #faf2d3;
+}
+
+.line1 {
+  /* background-color: #F4E869; */
+  background: linear-gradient(
+    to right,
+    rgba(244, 232, 105, 1),
+    rgba(244, 232, 105, 0)
+  );
+  width: 250px;
+  height: 3px;
+}
+
+.line2 {
+  /* background-color: #F4E869; */
+  background: linear-gradient(
+    to right,
+    rgba(244, 232, 105, 1),
+    rgba(244, 232, 105, 0)
+  );
+  width: 250px;
+  height: 20px;
+  margin: 1px 0;
+}
+
+.line3 {
+  /* background-color: #F4E869; */
+  background: linear-gradient(
+    to right,
+    rgba(244, 232, 105, 0),
+    rgba(244, 232, 105, 1)
+  );
+  width: 250px;
+  height: 3px;
+}
+
+.line4 {
+  /* background-color: #F4E869; */
+  background: linear-gradient(
+    to right,
+    rgba(244, 232, 105, 0),
+    rgba(244, 232, 105, 1)
+  );
+  width: 250px;
+  height: 20px;
+  margin: 1px 0;
+}
+
+/* 表頭樣式結束 */
+
+.donate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.donate-plan {
+  position: relative;
+  width: 250px;
+  height: 125px;
+  border: 1px solid #141414;
+  border-radius: 55px 5px 5px 5px;
+  margin: 0 20px;
+}
+
+.donate-plan:hover > img {
+  display: block;
+}
+
+.donate-plan:hover > span {
+  color: #307CAE;
+}
+
+.donate-plan img {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  top: 5px;
+  left: 5px;
+  z-index: -1;
+  display: none;
+}
+
+/* 贊助方案內文 start */
+
+.donate-level {
+  color: #141414;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0 0 20px;
+}
+
+.donate-amount {
+  color: #141414;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0 0 22px;
+}
+
+.donate-people {
+  color: #4a4a4a;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px 0 0 120px;
+}
+
+.donate-plan input {
+  width: 120px;
+  height: 20px;
+  color: #8f8f8f;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #d9d9d9;
+  outline-style: none;
+  border: none;
+  border-radius: 26px;
+  margin: 10px 0 10px 5px;
+}
+
+/* .donate-plan span {
+  color: #307CAE;
+} */
+/* 贊助方案內文 end */
+
+.donate-img {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  margin:0 auto ;
+}
+
+.donate-con1 {
+  display: flex;
+  padding: 20px 0px ;
+  margin: 0 auto;
+}
+
+.donate-con2 {
+  display: flex;
+  padding: 20px 0px;
+  margin: 0 auto;
+}
+
+#amount {
+  display: inline;
+}
+
+/* 捐款說明文字 */
+.donate-notion {
+  margin: 0 auto 20px auto;
+  width: 700px;
+}
+
+.donate-notion div {
+  width: 100%;
+}
+
+.donate-notion h2 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 10%;
+  color: #307cae;
+  text-align: center;
+  margin: 30px 0;
+}
+
+/* CSS reset後，ol的序號會不見 */
+/* 要設置list-style-type: decimal; list-style-position: inside;*/
+/* 但換行未對齊，將list-style-position改為outside */
+
+.donate-notion li {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 30%;
+  color: #141414;
+  line-height: 20px;
+  list-style-type: decimal;
+  list-style-position: outside;
+}

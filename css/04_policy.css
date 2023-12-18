@@ -1,0 +1,69 @@
+.policy-container h1 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 10%;
+  color: #307cae;
+  text-align: center;
+}
+
+.policy-section {
+  max-width: 1456px;
+  margin: 0 auto;
+}
+
+.policy-section img {
+  width: 580px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.policy,
+.policy2,
+.policy3,
+.policy4,
+.policy5 {
+  display: flex;
+  justify-content:space-between;
+  /* align-items: center; */
+  margin: 100px 0;
+}
+
+.policy2,
+.policy4 {
+  flex-direction: row-reverse;
+}
+
+.policy {
+  justify-content:space-around;
+}
+
+.policy img {
+  width: 400px;
+  height: auto;
+  padding: 0 90px;
+}
+
+.policy-section h2 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 10%;
+  line-height: 50px;
+  color: #ff6666;
+  margin: 0;
+}
+
+.policy-section p {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 30%;
+  line-height: 45px;
+  width: 835px;
+}
+
+/* .policy h2, .policy p {
+  display: inline;
+  
+} */
+
+

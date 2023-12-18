@@ -1,0 +1,973 @@
+@font-face { 
+  font-family: 'MyCustomFont';
+  src: url('../fonts/Inter-Regular.ttf') format('truetype');
+  unicode-range: U+4E00-9FFF;
+}
+
+@font-face { 
+  font-family: 'MyCustomFont';
+  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  unicode-range: U+00-024F;
+}
+
+body {
+  font-family:'MyCustomFont';
+  position: relative;
+}
+
+/* banner區 */
+.banner {
+  width: 100vw;
+  height: 600px;
+  display: block;
+  position: relative;
+
+}
+#bn7 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/01_homepage/banner_02_noShadow_1.png);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+}
+#bn6 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/01_homepage/Shadow_2.png);
+  background-repeat: no-repeat;
+ /* background-size: cover; */
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+}
+#bn5 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/01_homepage/Shadow_3.png);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+}
+#bn4 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/01_homepage/banner_02_noShadow_4.png);
+  background-repeat: no-repeat;
+ /* background-size: cover; */
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+}
+#bn3 {    /*肉球*/
+  width: 194px;
+  height: 198px;
+  background-image: url(../images/01_homepage/banner_02_ball.png);
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+  position: absolute;
+  top: 45%;
+  left: 72%;
+}
+#bn2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/01_homepage/Shadow_5.png);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+}
+#bn1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/01_homepage/banner_02_noShadow_6.png);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+}
+#bn_h1 {
+  color: #FFF;
+  font-size: 3.1rem;
+  letter-spacing: 0.3rem;
+  position: absolute;
+  margin: 0;
+  
+}
+#bn_p {
+  color: #DDBA28;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  position: absolute;
+  margin: 0;
+  top: 74px;
+}
+#bn_text {
+  width: 50%;
+  height: 30%;
+  position: absolute;
+  top: 32%;
+  left: 52%;
+}
+
+.marquee-container {
+  width: 100%;
+  display: flex;
+  font-size: 30px;
+  margin-bottom: 150px;
+  font-weight: bold;
+  height: 60px;
+  line-height: 60px;
+  color: #d37272;
+  border-top: 3px solid #d37272;
+  border-bottom: 3px solid #d37272;
+  overflow: hidden;
+}
+
+/* 薩卡主張+政策議題 */
+.article_div {
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  overflow: hidden;
+  /* background-color: #5E1ACD; */
+  
+}
+.article_div1 {   /*大標*/
+  width: 100%;
+  height: 1000px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.demand-container {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+#dC_left {
+  width: 40%;
+  height: auto;
+  display: flex;
+  background-color: rgb(241, 241, 241);
+  border-radius: 35px;
+  padding: 50px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2)
+}
+  #dC_left > p {
+    font-size: 1.25rem;
+    letter-spacing: 0.2rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+    text-align:justify;
+    display: inline-block;
+    margin: 20px 0;
+  }
+  .meowMark {
+    font-size: 1.5rem;
+    color: #d37272;
+    font-weight: 600;
+  }
+
+  .em-demand {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #d37272
+  }
+
+#dC_right {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+  #p01 {
+    width: 25%;
+    height: 15%;
+    background-image: url(../images/01_homepage/puzzle_thickness_shadow_p01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 75%;
+    left: -2%;
+    transform: rotate(-15deg);
+    z-index: -1;
+  }
+  #p02 {
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/01_homepage/puzzle_thickness_p02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+  }
+    #p02:hover{
+      background-image: url(../images/01_homepage/puzzle_thickness_shadow_p02.png);
+      z-index: 1;
+      transition-delay: 300ms;
+    }
+  #p03 {
+    width: 200px;
+    height: 250px;
+    background-image: url(../images/01_homepage/puzzle_thickness_p03.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 10%;
+    left: 60%;
+  }
+    #p03:hover{
+      background-image: url(../images/01_homepage/puzzle_thickness_shadow_p03.png);
+      z-index: 1;
+      transition-delay: 300ms;
+    }
+  #p04 {
+    width: 250px;
+    height: 250px;
+    background-image: url(../images/01_homepage/puzzle_thickness_p04.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 1;
+  }
+    #p04:hover{
+      background-image: url(../images/01_homepage/puzzle_thickness_shadow_p04.png);
+      z-index: 1;
+      transition-delay: 300ms;
+    }
+  #p05 {
+    width: 250px;
+    height: 200px;
+    background-image: url(../images/01_homepage/puzzle_thickness_p05.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 55%;
+    left: 30%;
+  }
+    #p05:hover{
+      background-image: url(../images/01_homepage/puzzle_thickness_shadow_p05.png);
+      z-index: 1;
+      transition-delay: 300ms;
+    }
+  #pText {
+    position: absolute;
+    top: 5%;
+    left: 8%;
+  }
+    #pText > p {
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.3rem;
+    }
+
+
+.marquee-content {
+  animation: marquee-content 10s linear infinite;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* 跑馬燈動畫 */
+@keyframes marquee-content {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* theme section */
+.theme {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  /* max-width: 1440px; */
+  width: 1440px;
+  overflow: hidden;
+}
+
+.hp-h2 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 10%;
+  color: #307cae;
+  transition-duration: 1s;
+  margin: 0;
+  /* 一定要有relative，子層偽元素才會顯示 */
+  position: relative;
+  display: inline-block;
+}
+.news-h2::before,
+.demand-title::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  height: 16px;
+  margin: 15px 0 0 0;
+  background-color: #d9d9d9;
+  transform-origin: center;
+  transform: scaleX(0.5);
+  transition: transform 0.3s ease;
+}
+.mailbox-title::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  height: 16px;
+  margin: 15px 0 0 0;
+  background-color: #d9d9d9;
+  transform-origin: center;
+  transform: scaleX(0.35);
+  transition: transform 0.3s ease;
+}
+
+/* .hp-h2::after {
+  position: absolute;
+  content: "";
+  width: 1v;
+  bottom: -20px; */
+/* 先依照父層往右移50% */
+/* left: 50%; */
+/* 再依自身寬度往左移動 */
+/* transform: translateX(-50%);
+  height: 10px;
+  background-color: #d9d9d9;
+} */
+
+.article_title1 {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.article_title2 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.theme h3 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 10%;
+  line-height: 50px;
+  color: #ff6666;
+  text-align: center;
+}
+
+.theme p {
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 15%;
+}
+
+/* .news-h2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.news-h2::after {
+  left: 100%;
+  transform: translateX(-150%);
+} */
+
+/* .mailbox-plane {
+  position: absolute;
+} */
+
+/* 飛機 */
+.mailbox_bg {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#svg_path {
+  position: absolute;
+  top: -350px;
+  left: 0px;
+  z-index: -10;
+}
+
+.cls-1 {
+  fill: none;
+  stroke: #dcdddd;
+  stroke-dasharray: 0 0 10 10;
+  stroke-linejoin: round;
+  stroke-opacity: 0.5;
+  stroke-width: 5px;
+}
+.plane {
+  position: absolute;
+  top: -350px;
+  left: -15px;
+  z-index: -2;
+  cursor: pointer;
+}
+
+.planefly {
+  cursor: pointer;
+  offset-path: path(
+    "M6.41,19.69S335.34-22.48,546.26,271.33c77.41,108.74,140.92,258.28,395.89,232.32s304.48-38.42,408.26,.04"
+  );
+  animation: motion-move 3s ease-in-out 0s 1 alternate forwards;
+}
+
+.plane:hover {
+  transform: scale(1.2);
+}
+
+.plane2 {
+  offset-path: path(
+    "M1350.41,503.69s107.59,53.2,208.59-43.8,167-124,224-127,267,14,310-17"
+  );
+  animation: motion-move2 2000ms ease-in-out 0s 1 alternate forwards;
+  /* 2 */
+}
+/* ,.mailbox-title */
+.demand-title,
+.mailbox-title,
+.news-title {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+}
+/* ,.mailbox-container */
+.demand-container,
+.mailbox-container {
+  position: relative;
+  opacity: 0;
+}
+
+.demand-container {
+  margin: 20px 0;
+  padding: 20px 50px;
+  border-radius: 45px;
+  /* background-color: #edc1a3; */
+  opacity: 0.2;
+}
+
+/* 區塊動畫 */
+.title-anima {
+  animation: title 500ms;
+  top: 0;
+  opacity: 1;
+}
+
+.container-anima {
+  animation: container 500ms;
+  top: 0;
+  opacity: 1;
+}
+
+@keyframes title {
+  from {
+    opacity: 0;
+    top: 100px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+    ::before {
+      transform: scaleX(1);
+    }
+  }
+}
+
+@keyframes container {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes motion-move {
+  from {
+    offset-distance: 5%;
+    z-index: -2;
+  }
+  to {
+    offset-distance: 90%;
+    z-index: 2;
+  }
+}
+
+@keyframes motion-move2 {
+  to {
+    offset-distance: 100%;
+  }
+}
+
+.vector1 {
+  position: absolute;
+  top: 700px;
+  left: 0;
+  z-index: 0;
+  width: 600px;
+}
+
+.vector2 {
+  position: absolute;
+  top: 720px;
+  right: 800px;
+  z-index: -1;
+  width: 600px;
+}
+
+.card {
+  position: absolute;
+  top: 750px;
+  z-index: 1;
+  
+}
+
+.card h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #484848;
+}
+
+/* 小額捐款按鈕樣式 */
+.btn-donate {
+  width: 80px;
+  /* scale: 0.2; */
+  height: 80px;
+  position: fixed;
+  /* z-index: 10px; */
+  bottom: 50px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.form-background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.form-style {
+  position: relative;
+  width: 1200px;
+  height: 80vh;
+  border-radius: 15px;
+  margin: 0 auto;
+  /* top: 10%; */
+  overflow-y: scroll;
+  padding: 30px;
+  background-color: #fff;
+}
+.form-style::-webkit-scrollbar {
+  display: none;
+}
+
+.btn-close {
+  width: 25px;
+  height: auto;
+  position: sticky;
+  border: none;
+  color: #525252;
+  top: 10px;
+  left: 1100px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+/* 小額捐款表單樣式 */
+/* 表頭樣式開始 */
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 10%;
+  color: #307cae;
+  text-align: center;
+  margin: 10px;
+}
+
+.now {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.now-p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin: 10px;
+}
+
+.donate-p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #484848;
+  text-align: center;
+  margin: 10px;
+}
+
+.now-text {
+  margin: 0 100px;
+}
+
+.now-number {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ff6666;
+  z-index: 0;
+  text-align: center;
+}
+
+.now-number::before {
+  /* 複製一份 */
+  content: attr(data-123);
+  position: absolute;
+  z-index: -1;
+  -webkit-text-stroke: 3px #faf2d3;
+}
+
+.line1 {
+  /* background-color: #F4E869; */
+  background: linear-gradient(
+    to right,
+    rgba(244, 232, 105, 1),
+    rgba(244, 232, 105, 0)
+  );
+  width: 250px;
+  height: 3px;
+}
+
+.line2 {
+  /* background-color: #F4E869; */
+  background: linear-gradient(
+    to right,
+    rgba(244, 232, 105, 1),
+    rgba(244, 232, 105, 0)
+  );
+  width: 250px;
+  height: 20px;
+  margin: 1px 0;
+}
+
+.line3 {
+  /* background-color: #F4E869; */
+  background: linear-gradient(
+    to right,
+    rgba(244, 232, 105, 0),
+    rgba(244, 232, 105, 1)
+  );
+  width: 250px;
+  height: 3px;
+}
+
+.line4 {
+  /* background-color: #F4E869; */
+  background: linear-gradient(
+    to right,
+    rgba(244, 232, 105, 0),
+    rgba(244, 232, 105, 1)
+  );
+  width: 250px;
+  height: 20px;
+  margin: 1px 0;
+}
+
+/* 表頭樣式結束 */
+.donate-background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.donate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.donate-plan {
+  position: relative;
+  width: 250px;
+  height: 125px;
+  border: 1px solid #141414;
+  border-radius: 55px 5px 5px 5px;
+  margin: 0 20px;
+  z-index: 2;
+}
+
+.donate-plan img {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  top: 5px;
+  left: 5px;
+  display: none;
+  z-index: -1;
+}
+
+.donate-plan:hover > img {
+  display: block;
+}
+
+.donate-plan:hover > .donate-level > span {
+  color: #5E1ACD;
+}
+
+.donate-plan:hover > .donate-amount {
+  color: #FFF;
+  text-shadow: 1px 1px #307CAE;
+}
+
+.donate-plan:hover > .donate-people > p > span {
+  color: #307cae;
+  font-weight: 600;
+}
+
+.donate-plan:hover > .donate-people > .rounded {
+  background-color: #FFF;
+}
+
+/* 贊助方案內文 start */
+
+.donate-level {
+  color: #141414;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 20px 0 0 20px;
+}
+
+.donate-amount {
+  color: #141414;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 15%;
+  margin: 0 0 0 22px;
+}
+
+.donate-people {
+  color: #4a4a4a;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 20%;
+  margin: 0 0 0 80px;
+  display: flex;
+}
+
+.rounded {
+  width: 0.8em;
+  height: 0.8em;
+  background-color: #C1C1C1;
+  border-radius: 50px;
+  margin: 0px 5px;
+}
+
+.donate-plan input {
+  width: 120px;
+  height: 20px;
+  color: #8f8f8f;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #d9d9d9;
+  outline-style: none;
+  border: none;
+  border-radius: 26px;
+  margin: 10px 0 10px 5px;
+}
+
+/* .donate-plan span {
+  color: #307CAE;
+} */
+/* 贊助方案內文 end */
+
+.donate-img {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  margin: 0 auto;
+}
+
+.donate-con1 {
+  display: flex;
+  padding: 20px 0px;
+  margin: 0 auto;
+}
+
+.donate-con2 {
+  display: flex;
+  padding: 20px 0px;
+  margin: 0 auto;
+}
+
+#amount {
+  display: inline;
+}
+
+/* 捐款說明文字 */
+.donate-notion {
+  margin: 0 auto 20px auto;
+  width: 700px;
+}
+
+.donate-notion div {
+  width: 100%;
+}
+
+.donate-notion h2 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 10%;
+  color: #307cae;
+  text-align: center;
+  margin: 30px 0;
+}
+
+/* CSS reset後，ol的序號會不見 */
+/* 要設置list-style-type: decimal; list-style-position: inside;*/
+/* 但換行未對齊，將list-style-position改為outside */
+
+.donate-notion li {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #141414;
+  line-height: 28px;
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+/* 意見信箱樣式 */
+.mailbox-form2 {
+  position: relative;
+  z-index: 2;
+}
+
+.mailbox-form2 form {
+  /* position: absolute; */
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.mailbox-form2 .hp-h2 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 10%;
+  color: #307cae;
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+
+.mailbox-form2 .input {
+  width: 600px;
+  height: 67px;
+  background-color: #7bc2e9;
+  opacity: 0.7;
+  outline-style: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 24px;
+  color: #141414;
+  margin: 25px 0;
+}
+
+.mailbox-form2 .input::placeholder,
+.mailbox-form2 .input2::placeholder {
+  color: #141414;
+}
+
+
+
+.mailbox-form2 .input2 {
+  width: 600px;
+  height: 328px;
+  background-color: #7bc2e9;
+  opacity: 0.7;
+  outline-style: none;
+  border: none;
+  border-radius: 25px;
+  font-size: 24px;
+  color: #141414;
+  margin: 25px 0;
+}
+
+.mailbox-form2 p {
+  justify-content: center;
+  display: inline;
+  width: 150px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #55a8d4;
+  margin: 25px 0;
+  line-height: 69px;
+}
+
+.btn-mailbox {
+  width: 167px;
+  height: 55px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #ff6666;
+  outline-style: none;
+  border: none;
+  border-radius: 39px;
+  margin: 0 25px 0 auto;
+}
+
+.img-mailbox {
+  position: absolute;
+  width: 1000px;
+  top: 30%;
+  left: -15%;
+  z-index: -1;
+  opacity: 0.5;
+}
+

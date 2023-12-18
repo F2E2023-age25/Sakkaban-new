@@ -1,0 +1,134 @@
+/* html {
+  margin: 0;
+  padding: 0;
+} */
+
+/* body {
+  display: flex;
+  background-color: rgb(56, 56, 56);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+} */
+.main001 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  /* overflow: hidden; */
+  font-size: none;
+}
+.carousel_bg {
+  width: 100vw;
+  background-color: antiquewhite;
+  height: 500px;
+  transform: rotate(15deg) skewX(15deg);
+  position: absolute;
+  top: 165px;
+  z-index: -1;
+  border-radius: 50px 50px 0 0;
+}
+
+.carouse_div {
+  margin: auto 0;
+  padding: 0;
+  width: 1920px;
+  font-display: none;
+  position: absolute;
+  top: 200px;
+  /* height: 50vh; */
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(15deg) skewX(15deg);
+  /* background-color: antiquewhite; */
+  /* transform: skewX(-30deg); */
+}
+/* .carouse_div::before{
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  z-index: -1;
+} */
+
+.carousel {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 420px;
+  /* margin: 10px 0 0; */
+  /* 圖片位移往下，與後方區塊垂直置中 */
+  transform: translateY(30px);
+  /* background-color: #dbb4b4; */
+}
+.carousel_container {
+  display: flex;
+  position: absolute;
+  transform: 1000ms;
+}
+
+.content {
+  box-sizing: border-box;
+  width: 420px !important;
+  height: 420px !important;
+  text-align: center;
+  padding: 0;
+  margin-right: -150px;
+  font-size: 0;
+  transform: skewX(-15deg);
+  filter: drop-shadow(6px 6px 2px rgba(61, 61, 61, 0.7));
+}
+.content2 {
+  box-sizing: border-box;
+  width: 420px !important;
+  height: 420px !important;
+  text-align: center;
+  padding: 0;
+  margin-right: -150px;
+  font-size: 0;
+  transform: skewX(-15deg);
+}
+
+.content img {
+  width: 420px;
+}
+.rounded-triangle2 {
+  height: 420px;
+  width: 420px;
+  clip-path: url(#myClip);
+}
+
+.rounded-triangle3 {
+  height: 420px;
+  width: 420px;
+  clip-path: url(#myClip2);
+  transition: 10ms;
+}
+
+.content:hover > img {
+  transform: scale(1.08) translate(-10px, 10px);
+}
+.content:hover {
+  filter: drop-shadow(12px 12px 7px rgba(71, 71, 71, 0.7));
+}
+.content:hover .card {
+  transform: rotateY(180deg);
+}
+@keyframes motion-block {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 1500px;
+  }
+}
